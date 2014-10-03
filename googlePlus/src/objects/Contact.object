@@ -691,6 +691,22 @@ IF( NOT( ISBLANK( sf4twitter__Twitter_Username__c ) ), &apos;http://twitter.com/
         </filters>
         <label>New This Week</label>
     </listViews>
+    <listViews>
+        <fullName>Social_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.Pinterest_Contact</value>
+        </filters>
+        <label>Social Contacts</label>
+    </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
         <fullName>Normal_Contact</fullName>
